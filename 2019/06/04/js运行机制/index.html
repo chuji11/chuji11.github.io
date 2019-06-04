@@ -5,15 +5,28 @@
   
 
   
-  <title>Hexo</title>
+  <title>js运行机制 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="学习目标:  理解面向对象开发思想 掌握 JavaScript 面向对象开发相关模式 掌握在 JavaScript 中使用正则表达式 typora-copy-images-to media   JavaScript 高级  课程介绍课程大纲在线地址：JavaScript 高级  目标 理解面向对象开发思想 掌握 JavaScript 面向对象开发相关模式 掌握在 JavaScript 中使用正则">
+<meta name="keywords" content="js,原理">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js运行机制">
+<meta property="og:url" content="http://yoursite.com/2019/06/04/js运行机制/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="学习目标:  理解面向对象开发思想 掌握 JavaScript 面向对象开发相关模式 掌握在 JavaScript 中使用正则表达式 typora-copy-images-to media   JavaScript 高级  课程介绍课程大纲在线地址：JavaScript 高级  目标 理解面向对象开发思想 掌握 JavaScript 面向对象开发相关模式 掌握在 JavaScript 中使用正则">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2019/06/04/js运行机制/media/Unofficial_JavaScript_logo_2.svg.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/04/js运行机制/media/%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/04/js运行机制/media/browser-js.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/04/js运行机制/media/mxdxkf.png">
+<meta property="og:image" content="http://yoursite.com/2019/06/04/js运行机制/media/20160823024542444.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/04/js运行机制/media/664ba37eeee9f4623c06c066867f1d38_r.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/06/04/js运行机制/media/构造函数-实例-原型之间的关系.png">
+<meta property="og:updated_time" content="2019-06-04T08:10:59.351Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="js运行机制">
+<meta name="twitter:description" content="学习目标:  理解面向对象开发思想 掌握 JavaScript 面向对象开发相关模式 掌握在 JavaScript 中使用正则表达式 typora-copy-images-to media   JavaScript 高级  课程介绍课程大纲在线地址：JavaScript 高级  目标 理解面向对象开发思想 掌握 JavaScript 面向对象开发相关模式 掌握在 JavaScript 中使用正则">
+<meta name="twitter:image" content="http://yoursite.com/2019/06/04/js运行机制/media/Unofficial_JavaScript_logo_2.svg.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +73,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-js运行机制" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-js运行机制" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/06/04/js运行机制/" class="article-date">
   <time datetime="2019-06-04T08:06:26.000Z" itemprop="datePublished">2019-06-04</time>
@@ -75,8 +86,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/04/js运行机制/">js运行机制</a>
+    <h1 class="article-title" itemprop="name">
+      js运行机制
     </h1>
   
 
@@ -1238,159 +1249,19 @@ console.log(/\W/.test(&quot;_&quot;));//true</code></pre><p>###正则表达式�
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/06/03/hello-world/" class="article-date">
-  <time datetime="2019-06-03T07:52:19.392Z" itemprop="datePublished">2019-06-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/03/hello-world/">Hello World</a>
-    </h1>
+    <a href="/2019/06/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/06/03/hello-world/" data-id="cjwhixqv20000okv8qibpeztd" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-nodejs" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/06/03/nodejs/" class="article-date">
-  <time datetime="2017-06-03T08:09:01.000Z" itemprop="datePublished">2017-06-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/03/nodejs/">nodejs</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Node-js-第2天课堂笔记"><a href="#Node-js-第2天课堂笔记" class="headerlink" title="Node.js 第2天课堂笔记"></a>Node.js 第2天课堂笔记</h1><h2 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h2><h2 id="反馈"><a href="#反馈" class="headerlink" title="反馈"></a>反馈</h2><ul>
-<li>老师像我一同学 但我知道 我同学没这么牛逼。。。<ul>
-<li>学习、分享、交流</li>
-</ul>
-</li>
-<li>老师 讲讲sumblie需要安装哪些插件把 以及怎么用Md结尾的文档，对于我们来说好像就是一个阅读器一样使用………………<ul>
-<li>HTML 也是标记语言</li>
-<li>markdown 标记语言</li>
-<li><code>#</code> 就是标题</li>
-<li><code>-</code>、<code>*</code> 就是列表</li>
-<li><code>**加粗内容**</code></li>
-<li><code>GFM</code></li>
-</ul>
-</li>
-<li>第一天上课 给我感觉挺好的 就是老师可能对早下课是不是有什么误解 我们平时都是 五点半放学的 ，还有就是有点啰嗦，那个不能起a呀b呀我感觉听了不下 五遍 我都要被你笑哭了</li>
-<li>老师讲的挺好的</li>
-<li>后来讲的速度有点上来了！</li>
-<li>老师很耐心！</li>
-<li>老师讲的课很好！</li>
-<li>感觉老师讲的有点快，语速快</li>
-<li>没有对比就没有伤害 体验了一把 普通话标准 英语发音又标准 幸福感</li>
-<li>感觉老师讲课的风格简单利落，思路清晰。 nice</li>
-<li>结尾不写分号是老师写的es6的代码风格，还是老师懒得写？</li>
-</ul>
-<h3 id="代码风格"><a href="#代码风格" class="headerlink" title="代码风格"></a>代码风格</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> foo = <span class="string">'bar'</span></span><br><span class="line"><span class="keyword">var</span> foo =<span class="string">'bar'</span></span><br><span class="line"><span class="keyword">var</span> foo= <span class="string">'bar'</span></span><br><span class="line"><span class="keyword">var</span> foo = <span class="string">"bar"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'hello'</span>) </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'hello'</span>) </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span> )&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'hello'</span>) </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>为了约定大家的代码风格，所以在社区中诞生了一些比较规范的代码风格规范：dnsajkndkjsabnjkdnjksandjknsajkdnjkasnjkdnjksandjknsajkdnjksajkdnas</p>
-<ul>
-<li><a href="https://standardjs.com/" target="_blank" rel="noopener">JavaScript Standard Style</a></li>
-<li>Airbnb JavaScript Style</li>
-</ul>
-<h2 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h2><h2 id="上午总结"><a href="#上午总结" class="headerlink" title="上午总结"></a>上午总结</h2><ul>
-<li><p>代码风格</p>
-</li>
-<li><p>无分号</p>
-<ul>
-<li><code>(</code></li>
-<li><code>[</code></li>
-<li>`</li>
-<li>最好前面补分号，避免一些问题</li>
-<li>《编写可维护的 JavaScript》</li>
-<li>不仅是功能，还要写的漂亮</li>
-</ul>
-</li>
-<li><p>服务端渲染</p>
-<ul>
-<li>说白了就是在服务端使用模板引擎</li>
-<li>模板引擎最早诞生于服务端，后来才发展到了前端</li>
-</ul>
-</li>
-<li><p>服务端渲染和客户端渲染的区别</p>
-<ul>
-<li>客户端渲染不利于 SEO 搜索引擎优化</li>
-<li>服务端渲染是可以被爬虫抓取到的，客户端异步渲染是很难被爬虫抓取到的</li>
-<li>所以你会发现真正的网站既不是纯异步也不是纯服务端渲染出来的</li>
-<li>而是两者结合来做的</li>
-<li>例如京东的商品列表就采用的是服务端渲染，目的了为了 SEO 搜索引擎优化</li>
-<li>而它的商品评论列表为了用户体验，而且也不需要 SEO 优化，所以采用是客户端渲染</li>
-</ul>
-</li>
-</ul>
-<h2 id="下午总结"><a href="#下午总结" class="headerlink" title="下午总结"></a>下午总结</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/03/nodejs/" data-id="cjwhixqve0001okv8q1pizylh" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
